@@ -54,6 +54,10 @@
 }
 
 @media (max-width: 568px) {
+    .header-main {
+        padding: 140px 0 67px;
+    }
+
     .nav-list {
         display: none;
     }
