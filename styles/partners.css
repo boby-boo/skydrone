@@ -1,0 +1,29 @@
+.partners {
+    margin: 128px 0 200px;
+}
+
+.partners h2 {
+    margin-bottom: 120px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.partners-row {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px 80px;
+}
+
+.partners-row img {
+    transition: opacity .3s ease;
+}
+
+.partners-row img:hover {
+    opacity: .8;
+}

@@ -1,0 +1,48 @@
+.services {
+    overflow: hidden;
+    padding: 24px 0;
+    background-color: #f3f3f3;
+}
+
+.services-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    animation: servicesRow 20s infinite linear;
+}
+
+@keyframes servicesRow {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.services-row li {
+    position: relative;
+    padding: 0 48px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5e5e5e;
+}
+
+.services-row li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #5e5e5e;
+}
+
+.services-row li:first-child:before {
+    display: none;
+}
