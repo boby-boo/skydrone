@@ -11,38 +11,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div id="header-row" class="header-row">
-                <div class="logo">
-                    <a href="/">
-                        <picture>
-                            <source srcset="src/header/logo.svg" media="(min-width: 769px)">
-                            <source srcset="src/header/logo_mobile.svg" media="(min-width: 120px)">
-                            <img src="src/header/logo.png" alt="SKYDRONE">
-                        </picture>
-                    </a>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="container">
+                <div id="header-row" class="header-row">
+                    <div class="logo">
+                        <a href="/">
+                            <picture>
+                                <source srcset="src/header/logo.svg" media="(min-width: 769px)">
+                                <source srcset="src/header/logo_mobile.svg" media="(min-width: 120px)">
+                                <img src="src/header/logo.png" alt="SKYDRONE">
+                            </picture>
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul id="nav-list" class="nav-list" >
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Download App</a></li>
+                            <li><button class="nav-btn button">Contact Us</button></li>
+                        </ul>
+                        <button id="open-btn" class="nav-button">
+                            <img class="open_btn__img open-btn" src="src/header/open_btn.svg" alt="open btn">
+                        </button>
+                    </nav>
                 </div>
-                <nav class="nav">
-                    <ul id="nav-list" class="nav-list" >
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Download App</a></li>
-                        <li><button class="nav-btn button">Contact Us</button></li>
-                    </ul>
-                    <button id="open-btn" class="nav-button">
-                        <img class="open_btn__img open-btn" src="src/header/open_btn.svg" alt="open btn">
-                    </button>
-                </nav>
             </div>
-        </div>
-    </header>
-    <div class="header-main">
-        <div class="container">
-            <div class="header-main__content" data-aos="fade-up" data-aos-duration="1500">
-                <h1 class="header-main__title title">Saving the world and growing crops</h1>
-                <p>Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.</p>
-                <button class="header-main__content-btn button">Contact Us</button>
+        </header>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main__content" data-aos="fade-up" data-aos-duration="1500">
+                    <h1 class="header-main__title title">Saving the world and growing crops</h1>
+                    <p>Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.</p>
+                    <button class="header-main__content-btn button">Contact Us</button>
+                </div>
             </div>
         </div>
     </div>
