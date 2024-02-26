@@ -9,7 +9,15 @@
 }
 
 .footer-inner a {
-    transition: color .3s ease;
+    transition: color 0.3s ease;
+}
+
+.footer-list a {
+    color: inherit;
+}
+
+.footer-links a {
+    color: inherit;
 }
 
 .footer-inner a:hover {
@@ -35,7 +43,7 @@
 .social-icon {
     font-size: 35px;
     color: #fff;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 }
 
 .social-icon:hover {
@@ -50,10 +58,6 @@
     color: #fff;
 }
 
-.footer-links a {
-    color: inherit;
-}
-
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -66,8 +70,4 @@
 .footer-list {
     display: flex;
     column-gap: 24px;
-}
-
-.footer-list a {
-    color: inherit;
 }

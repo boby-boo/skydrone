@@ -10,13 +10,14 @@
     align-items: center;
     flex-wrap: wrap;
     row-gap: 20px;
-    animation: servicesRow 20s infinite linear;
+    animation: services-row-animation 20s infinite linear;
 }
 
-@keyframes servicesRow {
+@keyframes services-row-animation {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -30,19 +31,19 @@
     color: #5e5e5e;
 }
 
-.services-row li:before {
+.services-row li::before {
     content: '';
-    display: block;
     position: absolute;
-    top: 50%;
-    left: 0;
     width: 11px;
     height: 11px;
+    display: block;
+    top: 50%;
+    left: 0;
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: #5e5e5e;
 }
 
-.services-row li:first-child:before {
+.services-row li:first-child::before {
     display: none;
 }

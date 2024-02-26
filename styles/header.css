@@ -7,11 +7,11 @@
 .header-wrapper::after {
     content: '';
     position: absolute;
+    width: 100%;
+    height: 100%;
     display: block;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: #000000a9;
 }
 
@@ -38,7 +38,7 @@
 .nav-list li a {
     color: var(--light-color);
     line-height: 1.5;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-list li a:hover {
@@ -66,8 +66,8 @@
 }
 
 .nav-button {
-    background-color: unset;
     display: none;
+    background-color: unset;
 }
 
 .open_btn__img {

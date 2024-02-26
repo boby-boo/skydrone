@@ -1,0 +1,21 @@
+{
+    "extends": ["stylelint-config-standard"],
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "selector-class-pattern": null,
+        "order/order": ["custom-properties", "declarations"],
+        "no-duplicate-selectors": true,
+        "color-no-invalid-hex": true,
+        "order/properties-order": [
+            "content",
+            "position",
+            "width",
+            "height",
+            "display",
+            "font-size",
+            "color",
+            "background-color",
+            "border"
+        ]
+    }
+}
