@@ -12,6 +12,8 @@
             "width",
             "height",
             "display",
+            "margin",
+            "padding",
             "font-size",
             "color",
             "background-color",

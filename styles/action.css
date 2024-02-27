@@ -1,0 +1,33 @@
+.action {
+    position: relative;
+    padding: 128px 0 0;
+    min-height: 850px;
+    background: url('../src/action/action_bg.jpg') center / cover no-repeat;
+}
+
+.action::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #000000a9;
+}
+
+.action-row {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.action-row h2 {
+    margin-bottom: 24px;
+}
+
+.action-row p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+}

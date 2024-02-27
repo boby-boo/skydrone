@@ -1,0 +1,90 @@
+.modern {
+    padding: 64px 0;
+    background-color: var(--primary-color);
+}
+
+.modern-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modern-row__reverse {
+    flex-direction: row-reverse;
+}
+
+.modern-row__image {
+    position: relative;
+    max-width: 616px;
+    height: 640px;
+    border-radius: 0 0 100%;
+    overflow: hidden;
+}
+
+.modern-row__image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #0005;
+}
+
+.modern-row__image-reverse {
+    border-radius: 100% 0 0;
+}
+
+.modern-row__content {
+    max-width: 616px;
+    line-height: 1.5;
+}
+
+.modern-content__subtitle {
+    margin-bottom: 24px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.modern-content__title {
+    margin-bottom: 32px;
+}
+
+.modern-cards__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px 10px;
+}
+
+.modern-card {
+    max-width: 296px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.modern-card__decor {
+    display: flex;
+    gap: 0.7px;
+}
+
+.modern-card span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.modern-card h3 {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 900;
+}

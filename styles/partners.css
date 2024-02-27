@@ -1,20 +1,21 @@
 .partners {
-    margin: 128px 0 200px;
+    padding: 128px 0 200px;
+    background-color: var(--light-color);
 }
 
 .partners h2 {
     margin-bottom: 120px;
     font-size: 24px;
     font-weight: 700;
-    color: #292E31;
+    color: #292e31;
     text-align: center;
 }
 
 .partners-row {
+    display: flex;
     max-width: 1020px;
     margin: 0 auto;
     padding: 0 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -22,9 +23,9 @@
 }
 
 .partners-row img {
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .partners-row img:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
