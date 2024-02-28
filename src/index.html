@@ -24,10 +24,16 @@
                                         media="(min-width: 120px)"
                                     />
                                     <img
+                                        class="logo-main"
                                         src="assets/icons/logo.svg"
                                         alt="SKYDRONE"
                                     />
                                 </picture>
+                                <img
+                                    class="logo-mobile__open"
+                                    src="assets/icons/logo.svg"
+                                    alt="SKYDRONE"
+                                />
                             </a>
                         </div>
                         <nav class="nav">
@@ -42,11 +48,12 @@
                                 </li>
                             </ul>
                             <button id="open-btn" class="nav-button">
-                                <img
-                                    class="open_btn__img open-btn"
-                                    src="assets/icons/open_btn.svg"
-                                    alt="open btn"
-                                />
+                                <i
+                                    class="header-menu__btn fa-solid fa-bars"
+                                ></i>
+                                <i
+                                    class="header-menu__btn none fa-solid fa-xmark"
+                                ></i>
                             </button>
                         </nav>
                     </div>
@@ -54,34 +61,37 @@
             </header>
             <div class="header-main">
                 <div class="container">
-                    <div class="header-main__content">
-                        <h1
-                            class="header-main__title title animate__animated animate__fadeInUp"
-                        >
+                    <div
+                        class="header-main__content"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                    >
+                        <h1 class="header-main__title title">
                             Saving the world and growing crops
                         </h1>
-                        <p class="animate__animated animate__fadeIn">
+                        <p>
                             Skydrone's innovative drone technology is bringing
                             the latest farming innovations to farms around the
                             world.
                         </p>
-                        <button
-                            class="header-main__content-btn button animate__animated animate__fadeIn"
-                        >
+                        <button class="header-main__content-btn button">
                             Contact Us
                         </button>
                     </div>
                 </div>
             </div>
+            <div class="decor-overlay"></div>
         </div>
-        <section
-            class="partners wow slideInLeft"
-            data-wow-duration="2s"
-            data-wow-delay="5s"
-        >
+        <section class="partners" data-aos="fade-in">
             <div class="container">
-                <h2>Used by the world's most innovative companies</h2>
-                <ul class="partners-row">
+                <h2 data-aos="fade-up">
+                    Used by the world's most innovative companies
+                </h2>
+                <ul
+                    class="partners-row"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                >
                     <li>
                         <a href="#">
                             <img
@@ -152,7 +162,7 @@
                 </ul>
             </div>
         </div>
-        <section class="modern">
+        <section class="modern" data-aos="fade-in">
             <div class="container">
                 <div class="modern-row">
                     <div class="modern-row__image">
@@ -197,7 +207,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial">
+        <section class="testimonial" data-aos="fade-in">
             <div class="container">
                 <ul class="testimonial-row">
                     <li class="testimonial-card">
@@ -260,7 +270,7 @@
                 </ul>
             </div>
         </section>
-        <section class="modern">
+        <section class="modern" data-aos="fade-in">
             <div class="container">
                 <div class="modern-row modern-row__reverse">
                     <div class="modern-row__image modern-row__image-reverse">
@@ -303,15 +313,27 @@
                 </div>
             </div>
         </section>
-        <section class="action">
+        <section class="action" data-aos="fade-in">
             <div class="container">
                 <div class="action-row">
-                    <h2 class="title">Drones are the future of agriculture</h2>
-                    <p>
+                    <h2
+                        class="title"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                    >
+                        Drones are the future of agriculture
+                    </h2>
+                    <p data-aos="fade-up" data-aos-duration="1600">
                         Get a bird's eye view of your fields and get a more
                         accurate estimation of crop yield.
                     </p>
-                    <button class="button">Contact Us</button>
+                    <button
+                        class="button"
+                        data-aos="fade-up"
+                        data-aos-duration="1800"
+                    >
+                        Contact Us
+                    </button>
                 </div>
             </div>
         </section>
@@ -319,15 +341,15 @@
             <div class="container">
                 <div class="application-row">
                     <div class="application-text">
-                        <h2>Download our app</h2>
-                        <p>
+                        <h2 data-aos="fade-right">Download our app</h2>
+                        <p data-aos="fade-right">
                             We're an agtech company with a clear mission: to
                             revolutionize farming by using AI and drone
                             technology.
                         </p>
                     </div>
                     <ul class="application-links">
-                        <li>
+                        <li data-aos="fade-up">
                             <a
                                 href="https://www.apple.com/app-store/"
                                 target="_blank"
@@ -338,7 +360,7 @@
                                 App Store
                             </a>
                         </li>
-                        <li>
+                        <li data-aos="fade-up">
                             <a href="https://play.google.com/" target="_blank">
                                 <i
                                     class="application-icon fa-brands fa-google-play"
@@ -413,10 +435,5 @@
                 </div>
             </div>
         </footer>
-
-        <script
-            src="https://kit.fontawesome.com/843cc998ef.js"
-            crossorigin="anonymous"
-        ></script>
     </body>
 </html>
