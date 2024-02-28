@@ -2,7 +2,7 @@
     position: relative;
     padding: 128px 0 0;
     min-height: 850px;
-    background: url('../src/action/action_bg.jpg') center / cover no-repeat;
+    background: url('../assets/images/action_bg.jpg') center / cover no-repeat;
 }
 
 .action::after {

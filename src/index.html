@@ -5,16 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SKYDRONE</title>
-        <script
-            src="https://kit.fontawesome.com/843cc998ef.js"
-            crossorigin="anonymous"
-        ></script>
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
-        <link rel="shortcut icon" href="src/favicon.ico" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="assets/favicon.ico" />
     </head>
     <body>
         <div class="header-wrapper">
@@ -25,15 +16,15 @@
                             <a href="/">
                                 <picture>
                                     <source
-                                        srcset="src/header/logo.svg"
+                                        srcset="assets/icons/logo.svg"
                                         media="(min-width: 769px)"
                                     />
                                     <source
-                                        srcset="src/header/logo_mobile.svg"
+                                        srcset="assets/icons/logo_mobile.svg"
                                         media="(min-width: 120px)"
                                     />
                                     <img
-                                        src="src/header/logo.png"
+                                        src="assets/icons/logo.svg"
                                         alt="SKYDRONE"
                                     />
                                 </picture>
@@ -53,7 +44,7 @@
                             <button id="open-btn" class="nav-button">
                                 <img
                                     class="open_btn__img open-btn"
-                                    src="src/header/open_btn.svg"
+                                    src="assets/icons/open_btn.svg"
                                     alt="open btn"
                                 />
                             </button>
@@ -63,36 +54,38 @@
             </header>
             <div class="header-main">
                 <div class="container">
-                    <div
-                        class="header-main__content"
-                        data-aos="fade-up"
-                        data-aos-duration="1500"
-                    >
-                        <h1 class="header-main__title title">
+                    <div class="header-main__content">
+                        <h1
+                            class="header-main__title title animate__animated animate__fadeInUp"
+                        >
                             Saving the world and growing crops
                         </h1>
-                        <p>
+                        <p class="animate__animated animate__fadeIn">
                             Skydrone's innovative drone technology is bringing
                             the latest farming innovations to farms around the
                             world.
                         </p>
-                        <button class="header-main__content-btn button">
+                        <button
+                            class="header-main__content-btn button animate__animated animate__fadeIn"
+                        >
                             Contact Us
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="partners">
+        <section
+            class="partners wow slideInLeft"
+            data-wow-duration="2s"
+            data-wow-delay="5s"
+        >
             <div class="container">
-                <h2 data-aos="zoom-in">
-                    Used by the world's most innovative companies
-                </h2>
-                <ul class="partners-row" data-aos="fade-up">
+                <h2>Used by the world's most innovative companies</h2>
+                <ul class="partners-row">
                     <li>
                         <a href="#">
                             <img
-                                src="src/partners/partner_1.svg"
+                                src="assets/icons/partner_1.svg"
                                 alt="partner brand"
                             />
                         </a>
@@ -100,7 +93,7 @@
                     <li>
                         <a href="#">
                             <img
-                                src="src/partners/partner_2.svg"
+                                src="assets/icons/partner_2.svg"
                                 alt="partner brand"
                             />
                         </a>
@@ -108,7 +101,7 @@
                     <li>
                         <a href="#">
                             <img
-                                src="src/partners/partner_3.svg"
+                                src="assets/icons/partner_3.svg"
                                 alt="partner brand"
                             />
                         </a>
@@ -116,7 +109,7 @@
                     <li>
                         <a href="#">
                             <img
-                                src="src/partners/partner_4.svg"
+                                src="assets/icons/partner_4.svg"
                                 alt="partner brand"
                             />
                         </a>
@@ -124,7 +117,7 @@
                     <li>
                         <a href="#">
                             <img
-                                src="src/partners/partner_5.svg"
+                                src="assets/icons/partner_5.svg"
                                 alt="partner brand"
                             />
                         </a>
@@ -132,7 +125,7 @@
                     <li>
                         <a href="#">
                             <img
-                                src="src/partners/partner_6.svg"
+                                src="assets/icons/partner_6.svg"
                                 alt="partner brand"
                             />
                         </a>
@@ -140,7 +133,7 @@
                     <li>
                         <a href="#">
                             <img
-                                src="src/partners/partner_7.svg"
+                                src="assets/icons/partner_7.svg"
                                 alt="partner brand"
                             />
                         </a>
@@ -165,7 +158,7 @@
                     <div class="modern-row__image">
                         <img
                             class="cover-img"
-                            src="src/modern/modern_img-1.jpg"
+                            src="assets/images/modern_img-1.jpg"
                             alt="drone"
                         />
                     </div>
@@ -211,7 +204,7 @@
                         <div class="testimonial-card__image">
                             <img
                                 class="cover-img"
-                                src="src/testimonial/client_icon.png"
+                                src="assets/images/client_icon.png"
                                 alt="client"
                             />
                         </div>
@@ -230,7 +223,7 @@
                         <div class="testimonial-card__image">
                             <img
                                 class="cover-img"
-                                src="src/testimonial/client_icon.png"
+                                src="assets/images/client_icon.png"
                                 alt="client"
                             />
                         </div>
@@ -249,7 +242,7 @@
                         <div class="testimonial-card__image">
                             <img
                                 class="cover-img"
-                                src="src/testimonial/client_icon.png"
+                                src="assets/images/client_icon.png"
                                 alt="client"
                             />
                         </div>
@@ -273,7 +266,7 @@
                     <div class="modern-row__image modern-row__image-reverse">
                         <img
                             class="cover-img"
-                            src="src/modern/modern_img-2.jpg"
+                            src="assets/images/modern_img-2.jpg"
                             alt="drone"
                         />
                     </div>
@@ -364,7 +357,7 @@
                         <div class="footer-logo">
                             <a href="/">
                                 <img
-                                    src="src/footer/logo_footer.svg"
+                                    src="assets/icons/logo_footer.svg"
                                     alt="logotype"
                                 />
                             </a>
@@ -421,7 +414,9 @@
             </div>
         </footer>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="scripts/main.js"></script>
+        <script
+            src="https://kit.fontawesome.com/843cc998ef.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

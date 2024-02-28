@@ -1,4 +1,11 @@
-AOS.init();
+import '../index.html';
+import '../styles/index.css';
+import '../styles/fonts.css';
+import 'animate.css';
+
+window.addEventListener('DOMContentLoaded', () => {
+    console.log('message');
+});
 
 const openBtn = document.querySelector('#open-btn');
 const btnImg = document.querySelector('.open_btn__img');
@@ -12,11 +19,11 @@ openBtn.addEventListener('click', () => {
         headerRow.classList.add('open');
         btnImg.src = 'src/header/close_btn.svg';
     }
-})
+});
 
-headerRow.addEventListener('click', (e) => {
+headerRow.addEventListener('click', e => {
     if (e.target.tagName == 'A') {
         document.querySelector('.header-row').classList.remove('open');
         btnImg.src = 'src/header/open_btn.svg';
     }
-})
+});
