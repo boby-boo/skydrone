@@ -1,3 +1,5 @@
+import calcScroll from './calcScroll';
+
 const menu = (triggerSelector, containerSelector) => {
     const trigger = document.querySelector(triggerSelector);
     const iconsButton = Array.from(trigger.children);
@@ -23,30 +25,18 @@ const menu = (triggerSelector, containerSelector) => {
         container.classList.toggle('open');
     }
 
-    function calcScroll() {
-        const div = document.createElement('div');
-
-        div.style.width = '50px';
-        div.style.height = '50px';
-        div.style.overflowY = 'scroll';
-        div.style.visibility = 'hidden';
-
-        document.body.appendChild(div);
-        const scrollWidth = div.offsetWidth - div.clientWidth;
-        div.remove();
-
-        return scrollWidth;
-    }
-
     function addMarginToTrigger() {
         const scrollWidth = calcScroll();
+        const windowWidth = window.innerWidth <= 568;
 
-        if (container.closest('.open')) {
-            document.body.style.overflow = 'hidden';
-            trigger.style.marginRight = `${scrollWidth}px`;
-        } else {
-            document.body.style.overflow = 'visible';
-            trigger.style.marginRight = '0px';
+        if (windowWidth) {
+            if (container.closest('.open')) {
+                document.body.style.overflow = 'hidden';
+                trigger.style.marginRight = `${scrollWidth}px`;
+            } else {
+                document.body.style.overflow = 'visible';
+                trigger.style.marginRight = '0px';
+            }
         }
     }
 };

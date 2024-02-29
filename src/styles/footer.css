@@ -42,12 +42,6 @@
 
 .social-icon {
     font-size: 35px;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-    color: var(--secondary-color);
 }
 
 .footer-links {
@@ -55,7 +49,7 @@
     flex-direction: column;
     gap: 8px;
     font-weight: 700;
-    color: #fff;
+    color: var(--light-color);
 }
 
 .footer-bottom {

@@ -98,6 +98,42 @@
     .application-text {
         text-align: center;
     }
+
+    .modal-row {
+        margin: 0 10px;
+        padding: 60px 40px;
+    }
+
+    .modal-row h2 {
+        margin-bottom: 20px;
+    }
+
+    .modal-input {
+        gap: 10px;
+    }
+
+    .modal-input__inner {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .modal-input__inner input {
+        max-width: 100%;
+    }
+
+    .modal-input span {
+        align-self: start;
+    }
+
+    .modal-btn__close {
+        top: 8px;
+        right: 8px;
+    }
+
+    .modal-btn__close i {
+        font-size: 50px;
+    }
 }
 
 @media (width <= 568px) {
@@ -181,5 +217,13 @@
 
     .modern-card h3 {
         font-size: 16px;
+    }
+
+    .modal-row {
+        font-size: 18px;
+    }
+
+    .modal-row h2 {
+        font-size: 22px;
     }
 }

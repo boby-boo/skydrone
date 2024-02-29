@@ -51,8 +51,6 @@
 
 .application-icon {
     font-size: 35px;
-    color: var(--light-color);
-    transition: all 0.4s ease;
 }
 
 .application-links a:hover .application-icon {

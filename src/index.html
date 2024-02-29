@@ -42,7 +42,9 @@
                                 <li><a href="#">Features</a></li>
                                 <li><a href="#">Download App</a></li>
                                 <li>
-                                    <button class="nav-btn button">
+                                    <button
+                                        class="nav-btn button button-modal__open"
+                                    >
                                         Contact Us
                                     </button>
                                 </li>
@@ -74,7 +76,9 @@
                             the latest farming innovations to farms around the
                             world.
                         </p>
-                        <button class="header-main__content-btn button">
+                        <button
+                            class="header-main__content-btn button button-modal__open"
+                        >
                             Contact Us
                         </button>
                     </div>
@@ -328,7 +332,7 @@
                         accurate estimation of crop yield.
                     </p>
                     <button
-                        class="button"
+                        class="button button-modal__open"
                         data-aos="fade-up"
                         data-aos-duration="1800"
                     >
@@ -355,7 +359,7 @@
                                 target="_blank"
                             >
                                 <i
-                                    class="application-icon fa-brands fa-apple"
+                                    class="icon application-icon fa-brands fa-apple"
                                 ></i>
                                 App Store
                             </a>
@@ -363,7 +367,7 @@
                         <li data-aos="fade-up">
                             <a href="https://play.google.com/" target="_blank">
                                 <i
-                                    class="application-icon fa-brands fa-google-play"
+                                    class="icon application-icon fa-brands fa-google-play"
                                 ></i>
                                 Google Play
                             </a>
@@ -391,7 +395,7 @@
                                     target="_blank"
                                 >
                                     <i
-                                        class="social-icon fa-brands fa-instagram"
+                                        class="icon social-icon fa-brands fa-instagram"
                                     ></i>
                                 </a>
                             </li>
@@ -401,7 +405,7 @@
                                     target="_blank"
                                 >
                                     <i
-                                        class="social-icon fa-brands fa-facebook"
+                                        class="icon social-icon fa-brands fa-facebook"
                                     ></i>
                                 </a>
                             </li>
@@ -411,7 +415,7 @@
                                     target="_blank"
                                 >
                                     <i
-                                        class="social-icon fa-brands fa-youtube"
+                                        class="icon social-icon fa-brands fa-youtube"
                                     ></i>
                                 </a>
                             </li>
@@ -435,5 +439,53 @@
                 </div>
             </div>
         </footer>
+        <div class="modal animate__animated animate__fadeIn animate__faster">
+            <div
+                class="modal-inner animate__animated animate__zoomIn animate__faster"
+            >
+                <button class="modal-btn__close">
+                    <i class="icon fa-solid fa-xmark modal-btn__icon"></i>
+                </button>
+                <form class="modal-row">
+                    <h2>Write your data and we call you</h2>
+                    <div class="modal-input">
+                        <div class="modal-input__inner">
+                            <label for="user-name">name</label>
+                            <input
+                                type="text"
+                                id="user-name"
+                                name="user-name"
+                            />
+                        </div>
+                        <span class="none">Data is not valid</span>
+                    </div>
+                    <div class="modal-input">
+                        <div class="modal-input__inner">
+                            <label for="user-email">email</label>
+                            <input
+                                type="email"
+                                id="user-email"
+                                name="user-email"
+                            />
+                        </div>
+                        <span class="none">Data is not valid</span>
+                    </div>
+                    <div class="modal-input">
+                        <div class="modal-input__inner">
+                            <label for="user-phone">phone</label>
+                            <input
+                                type="tel"
+                                id="user-phone"
+                                name="user-phone"
+                            />
+                        </div>
+                        <span class="none">Data is not valid</span>
+                    </div>
+                    <button type="submit" class="button modal-button">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
