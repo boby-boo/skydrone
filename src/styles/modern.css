@@ -42,15 +42,6 @@
     line-height: 1.5;
 }
 
-.modern-content__subtitle {
-    margin-bottom: 24px;
-    font-size: 24px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--secondary-color);
-}
-
 .modern-content__title {
     margin-bottom: 32px;
 }
