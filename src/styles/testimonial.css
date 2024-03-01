@@ -1,19 +1,27 @@
 .testimonial {
-    padding: 112px 0;
     background-color: var(--primary-color);
+}
+
+.testimonial-slider {
+    overflow: hidden;
+}
+
+.testimonial-slider__controls {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    gap: 10px;
 }
 
 .testimonial-row {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 48px 20px;
 }
 
 .testimonial-card {
-    max-width: 405px;
-    width: 100%;
+    min-width: 380px;
     padding: 5px;
     text-align: center;
 }
@@ -36,6 +44,5 @@
 }
 
 .testimonial-card__review {
-    max-width: 380px;
     font-size: 20px;
 }

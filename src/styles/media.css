@@ -17,6 +17,32 @@
     .application-text {
         max-width: 450px;
     }
+
+    .contact {
+        padding: 0 0 60px;
+    }
+
+    .contact h2,
+    .contact-subtitle {
+        text-align: center;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .contact-list {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-list__item a {
+        text-align: center;
+        align-items: center;
+    }
 }
 
 @media (width <= 768px) {
@@ -91,6 +117,10 @@
         max-width: 100%;
     }
 
+    .testimonial-slider__controls {
+        margin: 0 auto 30px;
+    }
+
     .application-row {
         flex-direction: column;
     }
@@ -133,6 +163,34 @@
 
     .modal-btn__close i {
         font-size: 50px;
+    }
+
+    .gallery-row h2 {
+        margin: 0 auto 60;
+    }
+
+    .title,
+    .subtitle {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .gallery-slider__btn {
+        width: 90px;
+    }
+
+    .gallery-slider__btn i {
+        font-size: 70px;
+    }
+
+    .gallery-card p {
+        padding: 10px;
+        bottom: 8px;
+        font-size: 20px;
+    }
+
+    .testimonial {
+        margin: 80px 0;
     }
 }
 
@@ -225,5 +283,25 @@
 
     .modal-row h2 {
         font-size: 22px;
+    }
+
+    .gallery-slider__btn {
+        max-width: 70px;
+    }
+
+    .gallery-slider__btn i {
+        font-size: 40px;
+    }
+
+    .gallery-card p {
+        padding: 10px;
+        bottom: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (width <= 440px) {
+    .gallery {
+        display: none;
     }
 }

@@ -43,7 +43,7 @@
                                 <li><a href="#">Download App</a></li>
                                 <li>
                                     <button
-                                        class="nav-btn button button-modal__open"
+                                        class="nav-btn button button-modal__open shadow__btn shadow__btn"
                                     >
                                         Contact Us
                                     </button>
@@ -166,6 +166,91 @@
                 </ul>
             </div>
         </div>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-row">
+                    <h3 class="subtitle">Reviews our clients</h3>
+                    <h2 class="title">The drone market leaders in Europe</h2>
+                    <div class="gallery-slider">
+                        <button
+                            class="gallery-slider__btn gallery-slider__prev-btn"
+                        >
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <ul
+                            class="gallery-slider__row"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
+                            <li class="gallery-card">
+                                <img
+                                    src="./assets/images/gallery-slide_3.jpg"
+                                    alt="drone"
+                                />
+                                <p>
+                                    "Unleashes my creativity on every adventure.
+                                    Compact, reliable, and produces stunning
+                                    footage. Elevates travel content to new
+                                    heights."
+                                </p>
+                            </li>
+                            <li class="gallery-card">
+                                <img
+                                    src="./assets/images/gallery-slide_6.jpg"
+                                    alt="drone"
+                                />
+                                <p>
+                                    "Precision farming made easy. Monitors crops
+                                    efficiently, helps plan irrigation, and
+                                    maximizes yield. A vital ag-tech tool!"
+                                </p>
+                            </li>
+                            <li class="gallery-card">
+                                <img
+                                    src="./assets/images/gallery-slide_5.jpg"
+                                    alt="drone"
+                                />
+                                <p>
+                                    "Captures breathtaking aerial shots
+                                    effortlessly. A game-changer for my
+                                    portfolio, thanks to its stability and
+                                    high-quality camera."
+                                </p>
+                            </li>
+                            <li class="gallery-card">
+                                <img
+                                    src="./assets/images/gallery-slide_1.jpg"
+                                    alt="drone"
+                                />
+                                <p>
+                                    "Exceptional surveillance capabilities and
+                                    robust design. Integral for tactical
+                                    operations, offering a strategic advantage
+                                    in diverse environments."
+                                </p>
+                            </li>
+                            <li class="gallery-card">
+                                <img
+                                    src="./assets/images/gallery-slide_4.jpg"
+                                    alt="drone"
+                                />
+                                <p>
+                                    "Pure joy to fly! User-friendly controls,
+                                    acrobatic stunts, and impressive speed.
+                                    Perfect for drone racing and fun
+                                    exploration."
+                                </p>
+                            </li>
+                        </ul>
+                        <button
+                            class="gallery-slider__btn gallery-slider-next__btn"
+                        >
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="modern" data-aos="fade-in">
             <div class="container">
                 <div class="modern-row">
@@ -213,65 +298,263 @@
         </section>
         <section class="testimonial" data-aos="fade-in">
             <div class="container">
-                <ul class="testimonial-row">
-                    <li class="testimonial-card">
-                        <div class="testimonial-card__image">
-                            <img
-                                class="cover-img"
-                                src="assets/images/client_icon.png"
-                                alt="client"
-                            />
-                        </div>
-                        <div class="testimonial-card__author">
-                            <h3>Michael Scott</h3>
-                            <span>Position, Company name</span>
-                        </div>
-                        <div class="testimonial-card__review">
-                            "A customer testimonial that highlights features and
-                            answers potential customer doubts about your product
-                            or service. Showcase testimonials from a similar
-                            demographic to your customers."
-                        </div>
-                    </li>
-                    <li class="testimonial-card">
-                        <div class="testimonial-card__image">
-                            <img
-                                class="cover-img"
-                                src="assets/images/client_icon.png"
-                                alt="client"
-                            />
-                        </div>
-                        <div class="testimonial-card__author">
-                            <h3>Michael Scott</h3>
-                            <span>Position, Company name</span>
-                        </div>
-                        <div class="testimonial-card__review">
-                            "A customer testimonial that highlights features and
-                            answers potential customer doubts about your product
-                            or service. Showcase testimonials from a similar
-                            demographic to your customers."
-                        </div>
-                    </li>
-                    <li class="testimonial-card">
-                        <div class="testimonial-card__image">
-                            <img
-                                class="cover-img"
-                                src="assets/images/client_icon.png"
-                                alt="client"
-                            />
-                        </div>
-                        <div class="testimonial-card__author">
-                            <h3>Michael Scott</h3>
-                            <span>Position, Company name</span>
-                        </div>
-                        <div class="testimonial-card__review">
-                            "A customer testimonial that highlights features and
-                            answers potential customer doubts about your product
-                            or service. Showcase testimonials from a similar
-                            demographic to your customers."
-                        </div>
-                    </li>
-                </ul>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slider__controls">
+                        <button class="slider-btn slider-prev__btn">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </button>
+                        <button class="slider-btn slider-next__btn">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <ul
+                        class="testimonial-row"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                    >
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>1</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>2</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>3</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>4</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>5</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>6</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>7</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>8</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>9</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>10</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>12</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <div class="testimonial-card__image">
+                                <img
+                                    class="cover-img"
+                                    src="assets/images/client_icon.png"
+                                    alt="client"
+                                />
+                            </div>
+                            <div class="testimonial-card__author">
+                                <h3>13</h3>
+                                <h3>Michael Scott</h3>
+                                <span>Position, Company name</span>
+                            </div>
+                            <div class="testimonial-card__review">
+                                "A customer testimonial that highlights features
+                                and answers potential customer doubts about your
+                                product or service. Showcase testimonials from a
+                                similar demographic to your customers."
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="modern" data-aos="fade-in">

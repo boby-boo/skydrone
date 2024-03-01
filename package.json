@@ -1,6 +1,7 @@
 {
     "scripts": {
         "start": "webpack serve",
+        "stylelint": "stylelint \"**/*.css\" --fix",
         "build-dev": "webpack",
         "build-prod": "webpack --node-env=production",
         "clear": "rd /s /q dist"
