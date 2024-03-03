@@ -5,10 +5,10 @@
 }
 
 .services-row {
+    width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     row-gap: 20px;
     animation: services-row-animation 20s infinite linear;
 }

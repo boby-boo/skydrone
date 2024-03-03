@@ -2,6 +2,12 @@
     padding: 120px 0 60px;
 }
 
+.gallery-row__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .gallery-row h2 {
     max-width: 500px;
     margin-bottom: 60px;

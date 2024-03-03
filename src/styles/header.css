@@ -1,6 +1,7 @@
 .header-wrapper {
     position: relative;
     z-index: 1;
+    height: 100vh;
 }
 
 .decor-overlay {
@@ -59,7 +60,7 @@
 }
 
 .header-main {
-    padding: 35vh 0;
+    padding: 20vh 0;
 }
 
 .header-main__content {
@@ -90,4 +91,43 @@
 .header-menu__btn:hover {
     color: #b45361;
     text-shadow: var(--secondary-color) 1px 1px 14px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 10%;
+    width: 50px;
+    height: 90px;
+    border-radius: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    background: none;
+    border: 3px solid var(--light-color);
+    transition: all 0.3s ease;
+}
+
+.scroll-down:hover {
+    background-color: #b4536281;
+    border-color: var(--secondary-color);
+}
+
+.scroll-down i {
+    font-size: 30px;
+    color: var(--light-color);
+    transition: color 0.3s ease;
+    animation: scroll-animation 1s ease-in 0s infinite alternate none;
+}
+
+.scroll-down:hover i {
+    color: var(--secondary-color);
+}
+
+@keyframes scroll-animation {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
 }

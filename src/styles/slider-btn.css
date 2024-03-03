@@ -1,0 +1,27 @@
+.slider-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #be314495;
+    border: 3px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 2px 1px 13px 8px #731d29;
+}
+
+.slider-btn:active {
+    background-color: #b23142c0;
+    box-shadow: 2px 1px 13px 8px var(--secondary-color);
+}
+
+.slider-btn i {
+    font-size: 30px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}

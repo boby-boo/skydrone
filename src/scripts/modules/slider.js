@@ -2,8 +2,6 @@ const slider = (
     containerSelector,
     trackSelector,
     slidesSelector,
-    prevBtnSelector,
-    nextBtnSelector,
     slidesToShow = 1,
     slidesToScroll = 1,
     isAdaptive = false,
@@ -22,8 +20,8 @@ const slider = (
     const sliderContainer = document.querySelector(containerSelector);
     const sliderTrack = document.querySelector(trackSelector);
     const slides = document.querySelectorAll(slidesSelector);
-    const prevBtn = document.querySelector(prevBtnSelector);
-    const nextBtn = document.querySelector(nextBtnSelector);
+    const prevBtn = sliderContainer.querySelector('.slider-prev__btn');
+    const nextBtn = sliderContainer.querySelector('.slider-next__btn');
 
     const itemWidth = sliderContainer.clientWidth / slidesToShow;
     const movePosition = slidesToScroll * itemWidth;
@@ -38,19 +36,20 @@ const slider = (
     function handlePrevClick() {
         if (position >= 0) {
             position = maxPosition;
-            return;
+        } else {
+            position += movePosition;
         }
 
-        position += movePosition;
         setPosition();
     }
 
     function handleNextClick() {
         if (position <= maxPosition) {
             position = 0;
-            return;
+        } else {
+            position -= movePosition;
         }
-        position -= movePosition;
+
         setPosition();
     }
 
