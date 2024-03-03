@@ -1038,7 +1038,7 @@ html {
     color: var(--secondary-color);
 }
 
-.contact-list__item h3 {
+.contact-list__item div {
     font-size: 32px;
     color: var(--light-color);
     font-weight: 900;
