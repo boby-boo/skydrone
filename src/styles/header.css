@@ -102,7 +102,7 @@
     right: 50%;
     transform: translateX(50%);
     background: none;
-    border: 3px solid var(--light-color);
+    border: 1px solid var(--light-color);
     transition: all 0.3s ease;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .scroll-down i {
-    font-size: 30px;
+    font-size: 28px;
     color: var(--light-color);
     transition: color 0.3s ease;
     animation: scroll-animation 1s ease-in 0s infinite alternate none;

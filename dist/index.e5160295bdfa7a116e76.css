@@ -279,7 +279,7 @@ html {
     right: 50%;
     transform: translateX(50%);
     background: none;
-    border: 3px solid var(--light-color);
+    border: 1px solid var(--light-color);
     transition: all 0.3s ease;
 }
 
@@ -289,7 +289,7 @@ html {
 }
 
 .scroll-down i {
-    font-size: 30px;
+    font-size: 28px;
     color: var(--light-color);
     transition: color 0.3s ease;
     animation: scroll-animation 1s ease-in 0s infinite alternate none;
@@ -1192,6 +1192,10 @@ html {
         text-align: center;
     }
 
+    .scroll-down {
+        bottom: 5%;
+    }
+
     .modern-row__image {
         max-width: 516px;
     }
@@ -1340,8 +1344,7 @@ html {
     }
 
     .modal-row {
-        margin: 0 10px;
-        padding: 60px 40px;
+        padding: 40px 10px;
     }
 
     .modal-row h2 {
@@ -1508,6 +1511,12 @@ html {
 
     .modal-row h2 {
         font-size: 22px;
+    }
+
+    .modal-btn__close {
+        top: -60px;
+        right: 50%;
+        transform: translateX(50%);
     }
 
     .gallery-row__content {
