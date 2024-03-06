@@ -90,6 +90,11 @@
     top: -50px;
     right: -70px;
     background: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-button:disabled {
+    opacity: 0.5;
 }
 
 .modal-btn__close i {

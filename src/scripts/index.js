@@ -13,6 +13,9 @@ import selectionOfProduct from './modules/selectionOfProduct';
 import createVideoPlayer from './modules/createVideoPlayer';
 import scrollToElement from './modules/scrollToElement';
 import scrollToUpPage from './modules/scrollToUpPage';
+import validateForm from './modules/validateForm';
+import mask from './modules/mask';
+import submitForm from './modules/submitForm';
 
 window.addEventListener('DOMContentLoaded', () => {
     AOS.init();
@@ -40,4 +43,11 @@ window.addEventListener('DOMContentLoaded', () => {
     createVideoPlayer('.modal-video', '.play', '.modal-video__close');
     scrollToElement('#scroll-down', '#products');
     scrollToUpPage('.button-scroll__main', '#header');
+    mask('.modal-row input[type="tel"]');
+    validateForm(
+        '.modal-row .modal-input',
+        '.modal-btn__close',
+        '.modal-button',
+    );
+    submitForm('#form');
 });
