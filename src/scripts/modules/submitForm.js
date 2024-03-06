@@ -38,7 +38,7 @@ const submitForm = (formSelector, submitTitleSelector) => {
     async function postData(data) {
         try {
             const res = await fetch(
-                'https://skydrone-db.vercel.app/callbacks/',
+                'https://skydrone-db-ruby.vercel.app/callbacks',
                 {
                     method: 'POST',
                     body: data,
