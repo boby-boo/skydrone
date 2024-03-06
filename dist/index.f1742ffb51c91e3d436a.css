@@ -990,6 +990,11 @@ html {
     top: -50px;
     right: -70px;
     background: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-button:disabled {
+    opacity: 0.5;
 }
 
 .modal-btn__close i {
@@ -999,6 +1004,16 @@ html {
 
 .modal-btn__close:hover i {
     color: #d03449;
+}
+
+.form-submit {
+    padding: 20px;
+    font-size: 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-align: center;
+    background: var(--light-color);
+    border-radius: 6px;
 }
 
 .contact {

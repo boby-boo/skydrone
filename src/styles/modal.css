@@ -105,3 +105,13 @@
 .modal-btn__close:hover i {
     color: #d03449;
 }
+
+.form-submit {
+    padding: 20px;
+    font-size: 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-align: center;
+    background: var(--light-color);
+    border-radius: 6px;
+}

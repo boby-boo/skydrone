@@ -49,5 +49,5 @@ window.addEventListener('DOMContentLoaded', () => {
         '.modal-btn__close',
         '.modal-button',
     );
-    submitForm('#form');
+    submitForm('#form', '.form-submit');
 });

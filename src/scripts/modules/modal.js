@@ -16,6 +16,7 @@ const modal = (
             document.body.style.paddingRight = `${scrollWidth}px`;
             document.body.style.overflow = 'hidden';
 
+            modalWindow.style.display = 'block';
             modalWindow.classList.remove('animate__zoomOut');
             modal.classList.remove('animate__fadeOut');
             modalWindow.classList.add('animate__zoomIn');
